@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+  --white: #FFFFFF;
+  --yellow: #d28b34;
+  --text-color: #545454;
+  --border-color: #d4d0cc;
+  --bg:  #fef7ed ;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.container h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--yellow);
+  text-align: center;
+  padding-block: 64px;
+}
+
+#citiesList{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+#citiesList li{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 20px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+#citiesList li .plate-number{
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--yellow);
+}
+
+#citiesList li .city-name{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+#citiesList li .famous-for{
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: right;
+}
+
+
+#foodFamousCitiesList{
+  margin-block: 64px;
+}
+
+#placeFamousCitiesList{
+  margin-bottom: 64px;
+}
+
+#foodFamousCitiesList h2, #placeFamousCitiesList h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--yellow);
+  margin-bottom: 40px;
+} 
+
+#foodFamousCitiesList li, #placeFamousCitiesList li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+#foodFamousCitiesList li:last-child, #placeFamousCitiesList li:last-child{
+  border-bottom: none;
+}
+
+
+#foodFamousCitiesList li .plate-number, #placeFamousCitiesList li .plate-number{
+  font-size: 60px;
+  font-weight: 800;
+  color: var(--yellow);
+}
+
+#foodFamousCitiesList li .city-name, #placeFamousCitiesList li .city-name{
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#foodFamousCitiesList li .famous-for, #placeFamousCitiesList li .famous-for{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: left;
+}
+
+#foodFamousCitiesList li img, #placeFamousCitiesList li img{
+  width: 200px;
+  display: flex;
+  border-radius: 6px;
+}
+
+.plate-numbers-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 64px;
+}
+
+.plate-numbers-container ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.plate-numbers-container ul h2{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--yellow);
+  margin-bottom: 12px;
+}
+
+.plate-numbers-container ul li{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.plate-numbers-container ul li .plate-number{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.plate-numbers-container ul li .city-name{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
